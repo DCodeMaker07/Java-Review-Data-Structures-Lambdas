@@ -2,6 +2,8 @@ package org.TLPS1;
 
 import org.TLPS1.clase01.FakerUtils;
 import org.TLPS1.clase01.Persona;
+import org.TLPS1.search.binarySearch;
+import org.TLPS1.search.sequentialSearch;
 import org.TLPS1.sort.*;
 
 import java.util.ArrayList;
@@ -11,16 +13,20 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
-         int[] numbers = {5, 4, 3, 2, 1};
+         int[] numbers = {1,2,3,4,5};
+
+        //sequentialSearch.search(numbers, 10);
+
+        binarySearch.search(numbers, 5);
 
         //int[] sorted = bubbleSort.bubbleSort(numbers);
         //int[] sorted = insertSort.insertSort(numbers);
         // int[] sorted = selectionSort.selectionSort(numbers);
-        int[] sorted = quickSort.quickSort(numbers, 0 , numbers.length - 1);
-
-        for (int i = 0; i < sorted.length; i++) {
-            System.out.println(sorted[i]);
-        }
+//        int[] sorted = quickSort.quickSort(numbers, 0 , numbers.length - 1);
+//
+//        for (int i = 0; i < sorted.length; i++) {
+//            System.out.println(sorted[i]);
+//        }
 
         // List<Persona> personList = generatePersons(100); // in heap
 
